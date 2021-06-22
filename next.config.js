@@ -32,6 +32,7 @@ module.exports = withBundleAnalyzer({
         },
       ],
     });
+    conf.externals.push("canvas");
     // 절대경로
     conf.resolve.modules.push(__dirname);
     return conf;
